@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    background-color: rgb(250 204 21);
+}
+html {
+    scroll-behavior: smooth;
+}
+.dark {
+    background-color: black;
+    color: white;
+}
+
+@keyframes move {
+    50% {transform: translateY(-10px);}
+    
+}
+.moveingY {
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    
+}
